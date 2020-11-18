@@ -16,9 +16,15 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <!--swagger-->
+        <swagger.version>2.7.0</swagger.version>
+        <knife4j.version>2.0.4</knife4j.version>
+        <!--java连接mysql-->
+        <mysql-java.sersion>8.0.13</mysql-java.sersion>
     </properties>
 
     <dependencies>
+        <!--controller层-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -44,6 +50,7 @@
             <version>1.1.10</version>
         </dependency>
 
+        <!--单元测试-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -56,10 +63,31 @@
             </exclusions>
         </dependency>
 
+        <!--lombok简化getter和setter-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+
+        <!--swagger-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <!--在引用时请在maven中央仓库搜索最新版本号-->
+            <version>${knife4j.version}</version>
         </dependency>
 
     </dependencies>
