@@ -1,5 +1,7 @@
 package com.miao.test.controller;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.miao.common.response.Result;
 import com.miao.test.pojo.Users;
 import com.miao.test.service.UsersService;
@@ -28,9 +30,17 @@ public class UserController {
     /*查询用户列表*/
     @ApiOperation("查询用户列表")
     @GetMapping("/getList") //类似@RequestMapping("/getList")
-    public Result getUserList() {
+    public Result getUserList(@RequestParam(value="当前页",defaultValue="1") int page,
+                              @RequestParam(value = "总数", defaultValue = "4") int limit) {
+        //这个一定要放在第一行,否则无法进行分页
+        Page currentPage= PageHelper.startPage(page,limit);
+
         List<Users> list = this.usersService.getUserList();
-        System.out.println(Result.ok().data("list", list));
-        return Result.ok().data("list", list);
+
+        //分页
+//        PageInfo pageInfo = new PageInfo(list);
+
+//        System.out.println(currentPage);
+        return Result.ok().data("records",list);
     }
 }
