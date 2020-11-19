@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.List;
 
-@Api(value = "用户管理")
+@Api(tags = "用户管理",value = "用户管理")
 @RestController //@ResponseBody ＋ @Controller
 @RequestMapping
 @CrossOrigin
@@ -19,6 +19,7 @@ public class UserController {
     @Resource //类似@Autowired
     private UsersService usersService;
 
+    @ApiOperation("测试接口")
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String hello() {
         return "Hello!This is my first Springboot Test!";
@@ -32,6 +33,4 @@ public class UserController {
         System.out.println(Result.ok().data("list", list));
         return Result.ok().data("list", list);
     }
-
-
 }

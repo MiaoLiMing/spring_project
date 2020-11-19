@@ -3,6 +3,7 @@ package com.miao.test.pojo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
 @ApiModel(value="User对象", description="用户表")//swagger注解
