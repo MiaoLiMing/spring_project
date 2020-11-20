@@ -1,6 +1,6 @@
 package com.miao.test.jpa;
 
-import com.miao.test.entity.Users;
+import com.miao.test.pojo.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

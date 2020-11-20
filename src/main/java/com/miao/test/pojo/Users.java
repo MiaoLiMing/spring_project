@@ -1,4 +1,4 @@
-package com.miao.test.entity;
+package com.miao.test.pojo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

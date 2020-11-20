@@ -94,6 +94,7 @@
             <version>${knife4j.version}</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>

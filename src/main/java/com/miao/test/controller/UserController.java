@@ -2,7 +2,7 @@ package com.miao.test.controller;
 
 import com.miao.common.response.Result;
 import com.miao.test.jpa.UserJPA;
-import com.miao.test.entity.Users;
+import com.miao.test.pojo.Users;
 import com.miao.test.service.UsersService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

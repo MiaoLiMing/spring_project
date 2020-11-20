@@ -1,8 +1,8 @@
 package com.miao.test.service.impl;
 
-import com.miao.test.mapper.UsersMapper;
-import com.miao.test.entity.Users;
 import com.miao.test.service.UsersService;
+import com.miao.test.mapper.UsersMapper;
+import com.miao.test.pojo.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
