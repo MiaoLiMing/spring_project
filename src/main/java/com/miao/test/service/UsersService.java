@@ -1,6 +1,6 @@
 package com.miao.test.service;
 
-import com.miao.test.pojo.Users;
+import com.miao.test.entity.Users;
 
 import java.util.List;
 
