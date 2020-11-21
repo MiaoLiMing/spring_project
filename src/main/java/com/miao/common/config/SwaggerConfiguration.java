@@ -29,7 +29,7 @@ public class SwaggerConfiguration {
         return new ApiInfoBuilder()
                 .title("API文档")
                 .description("API文档")
-                .termsOfServiceUrl("https://angegit.gitee.io/myblog/")
+                .termsOfServiceUrl("http://localhost:8080")
                 .version("1.0")
                 .build();
     }
