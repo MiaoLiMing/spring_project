@@ -1,14 +1,13 @@
-package com.srm.system;
+package com.miao.test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SystemApplicationTests {
+class TestApplicationTests {
 
     @Test
     void contextLoads() {
-        System.out.println(111);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.srm.common.response;
+package com.miao.common.response;
 
 /**
  * @Description: 返回码定义
@@ -9,7 +9,7 @@ package com.srm.common.response;
  * #3001～3999 区间表示接口异常
  * #后面对什么的操作自己在这里注明就行了
  */
-public enum ResultCode implements com.srm.common.response.CustomizeResultCode {
+public enum ResultCode implements CustomizeResultCode{
     /* 成功 */
     SUCCESS(200, "成功"),
 

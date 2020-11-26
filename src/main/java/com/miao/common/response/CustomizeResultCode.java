@@ -1,4 +1,4 @@
-package com.srm.common.response;
+package com.miao.common.response;
 
 public interface CustomizeResultCode {
 
